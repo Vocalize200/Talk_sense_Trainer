@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap');
+
+:root {
+    --bg-color: #1a1a1d;
+    --primary-color: #c3073f;
+    --secondary-color: #6f2232;
+    --text-color: #f5f5f5;
+    --card-bg: #2d2d34;
+}
+
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    width: 90%;
+    max-width: 800px;
+    text-align: center;
+}
+
+header h1 {
+    color: var(--primary-color);
+    font-size: 2.5rem;
+}
+
+nav#training-selector {
+    margin: 2rem 0;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.btn {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    border: none;
+    padding: 12px 24px;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #9a0532;
+}
+
+.btn.start-btn {
+    background-color: #4CAF50; /* 시작 버튼은 초록색 */
+}
+.btn.start-btn:hover {
+    background-color: #45a049;
+}
+
+
+main#training-ground {
+    background-color: var(--card-bg);
+    padding: 2rem;
+    border-radius: 10px;
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.word-display {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin: 1.5rem 0;
+    color: var(--primary-color);
+}
+
+.timer {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+}
+
+.instructions {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+}
+
+.progress {
+    margin-top: 1rem;
+    font-size: 1rem;
+}
